@@ -1,0 +1,11 @@
+{
+  "name": "atfroost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Me",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
