@@ -5,7 +5,7 @@ const config = require("./config.json"); // kita akan menaruh prefix dan token d
 bot.on("ready", async () => {
   bot.user.setUsername("TOXBOT")
     console.log(`${bot.user.username} Sudah Coli!!`);
-    bot.user.setActivity("Prefix %", {type: "WATCHING"});
+    bot.user.setActivity("YouPorn", {type: "WATCHING"});
 });
 
 bot.on("message", async message => {
