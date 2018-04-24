@@ -133,4 +133,4 @@ bot.on('guildMemberRemove', member => {
     console.log("Leave Message Sent")
 });
 
-bot.login(config.token);
+bot.login(process.env.BOT_TOKEN);
