@@ -87,22 +87,6 @@ bot.on("message", async message => {
     }
 });
 
-bot.on("message", message =>{
-    if (message.author.bot) return;
-var cleanarr=[];
-        let command = message.content.split(" ")[0];
-command = command.slice(config.prefix.length);
-
-        let args = message.content.split(" ").slice(1);
-if (message.content == 'lol'){
-    message.channel.sendMessage('LUL');
-    cleanarr.unshift(`${message.channel.lastMessageID}`);
-    }
-if (command == "clean") {
-    message.channel.sendMessage('Cleaning...');
-    message.channel.bulkDelete(cleanarr);
-    var cleanarr = [];
-
 bot.on('guildMemberAdd', member => {
     let channel = member.guild.channels.find('name', 'welcome-goodbye');
     let memberavatar = member.user.avatarURL
