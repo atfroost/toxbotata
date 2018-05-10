@@ -91,7 +91,7 @@ bot.on("message", async message => {
         //!kick @daeshan askin for it
     
         let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-        if(!kUser) return message.channel.send("Can't find user!");
+        if(!kUser) return message.channel.send("Orangnya mana?");
         let kReason = args.join(" ").slice(22);
         if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("No can do pal!");
         if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
@@ -117,7 +117,7 @@ bot.on("message", async message => {
       if(cmd === `${prefix}ban`){
 
         let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-        if(!bUser) return message.channel.send("Can't find user!");
+        if(!bUser) return message.channel.send("Orangnya mana?");
         let bReason = args.join(" ").slice(22);
         if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("No can do pal!");
         if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
@@ -146,7 +146,7 @@ bot.on("message", async message => {
         //!report @ned this is the reason
     
         let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-        if(!rUser) return message.channel.send("Couldn't find user.");
+        if(!rUser) return message.channel.send("Orangnya mana?");
         let rreason = args.join(" ").slice(22);
     
         let reportEmbed = new Discord.RichEmbed()
